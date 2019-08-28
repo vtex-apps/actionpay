@@ -1,9 +1,9 @@
 {
-  "name": "CHANGEME",
+  "name": "actionpay",
   "vendor": "vtex",
   "version": "0.0.1",
-  "title": "CHANGEME",
-  "description": "CHANGEME",
+  "title": "Actionpay",
+  "description": "Actionpay VTEX App",
   "billingOptions": {
     "termsURL": "",
     "support": {
@@ -20,12 +20,22 @@
     "vtex.pixel-interfaces": "1.x"
   },
   "settingsSchema": {
-    "title": "APP NAME",
+    "title": "Actionpay Settings",
     "type": "object",
     "properties": {
-      "gtmId": {
-        "title": "SAMPLE FIELD",
-        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
+      "actionpayPartnerId": {
+        "title": "Partner ID",
+        "description": "Enter your Actionpay Partner ID",
+        "type": "string"
+      },
+      "actionpayPostclick": {
+        "title": "Post-click",
+        "description": "Enter your Actionpay Post-click",
+        "type": "number"
+      },
+      "actionpayCampaignId": {
+        "title": "Campaign ID",
+        "description": "Enter your Actionpay Campaign ID",
         "type": "string"
       }
     }
