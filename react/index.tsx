@@ -64,13 +64,6 @@ function handleMessages(event: PixelMessage) {
         transactionSubtotal,
       }: OrderPlacedData = event.data
 
-      const sourcevar = getQueryVariable('utm_source')
-      if (sourcevar && sourcevar === 'actionpay') {
-        const actionpay = getQueryVariable('actionpay')
-        actionpay && setActionpayCookie('Actionpay', actionpay)
-      }
-      sourcevar && setActionpayCookie('Origem', sourcevar)
-
       createImageTags(transactionId, transactionSubtotal)
 
       const purchasedProducts = transactionProducts.map(
@@ -115,5 +108,11 @@ function addTrackingScript() {
 }
 
 if (canUseDOM) {
+  const sourcevar = getQueryVariable('utm_source')
+  if (sourcevar && sourcevar === 'actionpay') {
+    const actionpay = getQueryVariable('actionpay')
+    actionpay && setActionpayCookie('Actionpay', actionpay)
+  }
+  sourcevar && setActionpayCookie('Origem', sourcevar)
   window.addEventListener('message', handleMessages)
 }
