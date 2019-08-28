@@ -1,3 +1,7 @@
 interface Window extends Window {
-  dataLayer: any[]
+  actionpayPartnerId: string
+  actionpayDomain: string
+  actionpayPostclick: number
+  actionpayCampaignId: string
+  APRT_DATA: any
 }
