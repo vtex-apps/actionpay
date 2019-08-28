@@ -1,9 +1,9 @@
 {
-  "name": "CHANGEME",
+  "name": "actionpay",
   "vendor": "vtex",
   "version": "0.0.1",
-  "title": "CHANGEME",
-  "description": "CHANGEME",
+  "title": "Actionpay",
+  "description": "Actionpay VTEX App",
   "billingOptions": {
     "termsURL": "",
     "support": {
