@@ -20,12 +20,27 @@
     "vtex.pixel-interfaces": "1.x"
   },
   "settingsSchema": {
-    "title": "APP NAME",
+    "title": "Actionpay Settings",
     "type": "object",
     "properties": {
-      "gtmId": {
-        "title": "SAMPLE FIELD",
-        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
+      "actionpayPartnerId": {
+        "title": "Partner ID",
+        "description": "Enter your Actionpay Partner ID",
+        "type": "string"
+      },
+      "actionpayDomain": {
+        "title": "Domain",
+        "description": "Enter your Actionpay Domain e.g: example.com (without \"www.\")",
+        "type": "string"
+      },
+      "actionpayPostclick": {
+        "title": "Post-click",
+        "description": "Enter your Actionpay Post-click",
+        "type": "number"
+      },
+      "actionpayCampaignId": {
+        "title": "Campaign ID",
+        "description": "Enter your Actionpay Campaign ID",
         "type": "string"
       }
     }
