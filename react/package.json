@@ -1,20 +1,19 @@
 {
+  "author": "vtex",
   "scripts": {
     "test": "vtex-test-tools test"
   },
-  "dependencies": {
-    "ramda": "^0.26.1"
-  },
   "devDependencies": {
-    "@types/graphql": "^14.2.0",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.0",
-    "@types/ramda": "^0.26.5",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.2",
     "@vtex/test-tools": "^1.1.0",
-    "eslint": "^5.16.0",
+    "eslint": "^5.15.1",
+    "eslint-config-vtex": "^10.1.0",
     "eslint-config-vtex-react": "^4.1.0",
-    "prettier": "^1.18.2",
-    "tslint-eslint-rules": "^5.4.0",
-    "typescript": "3.5.2"
+    "prettier": "^1.17.1",
+    "typescript": "3.5.2",
+    "vtex.pixel-interfaces": "http://vtex.vteximg.com.br/_v/public/typings/v1/vtex.pixel-interfaces@1.1.0/public/_types/react",
+    "vtex.render-runtime": "http://vtex.vteximg.com.br/_v/public/typings/v1/vtex.render-runtime@8.50.0/public/_types/react"
   }
 }
