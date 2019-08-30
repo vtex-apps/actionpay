@@ -47,8 +47,7 @@ export function getUrls(transactionId: string, transactionSubtotal: number) {
   const { actionpayCampaignId: campaignId } = window
   const actionpayCookie = getCookieByName('Actionpay')
   return [
-    `//apretailer.com.br/ok/${campaignId}.png?actionpay=${actionpayCookie}&apid=${transactionId}&price=${transactionSubtotal}`,
-    `//apypxl.com/ok/${campaignId}.png?actionpay=${actionpayCookie}&apid=${transactionId}&apprice=${transactionSubtotal}`,
+    `//apretailer.com.br/ok/${campaignId}.png?actionpay=${actionpayCookie}&apid=${transactionId}&price=${transactionSubtotal}`
   ]
 }
 
