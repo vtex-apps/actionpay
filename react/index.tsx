@@ -15,7 +15,7 @@ function handleMessages(event: PixelMessage) {
 
   switch (event.data.eventName) {
     case 'vtex:pageInfo': {
-      const { eventType, pageDepartment = '', pageCategory = '' } = event.data
+      const { eventType, department, category } = event.data
       let eventData: any = {
         pageType: 1,
       }
@@ -23,10 +23,7 @@ function handleMessages(event: PixelMessage) {
         eventData = {
           ...eventData,
           pageType: 3,
-          currentCategory: {
-            id: '',
-            name: pageDepartment || pageCategory,
-          },
+          currentCategory: category || department,
         }
       }
       window.APRT_DATA = { ...APRT_DATA, ...eventData }
